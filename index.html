@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github Finder HTML JS OOP </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="u-full-width">
+    <h3>GitHub Finder</h3>
+  </nav>
+  <div class="container">
+    <div class="u-full-width border-round bg-orange">
+      <form action="">
+        <h4>Search Github User</h4>
+        <label for="userName">Enter a username to fetch a user profile and repos</label>
+        <input type="text" name="" id="userName" class="u-full-width" placeholder="Github username">
+        <input type="submit" value="Search" id="search" class="button-primary u-full-width">
+      </form>
+    </div>
+    <div class="row border-round  u-full-width" id="userContainer">
+      <div class="three columns text-center u-max-full-width">
+        <img class="u-max-full-width" src="https://via.placeholder.com/150" alt="" id="userImage">
+        <h6 id="fullName" class="u-full-width">Full name</h6>
+        <a href="#" class="button button-primary u-full-width" id="viewProfile">View Profile</a>
+
+      </div>
+      <div class="nine columns u-full-width">
+        <div class="pr-infos">
+          <div class="row">
+            <div class="three columns  pr1">Public Repos: <span id="publicRepos">12</span></div>
+            <div class="three columns pr2">Public Gist: <span id="publicGist">12</div>
+            <div class="three columns pr3">Followers: <span id="followers">12</div>
+            <div class="three columns pr4">Following: <span id="following">12</div>
+          </div>
+        </div>
+
+        <ul class="user-infos">
+          <li>Company: <span id="company">12</li>
+          <li>Website/Blog: <span id="website">12</li>
+          <li>Location: <span id="location">12</li>
+          <li>Member Since: <span id="memberSince">12</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-round bg-orange text-center u-full-width" id="warning">User name not found</div>
+  </div>
+  <footer class="u-full-width text-center">
+    &copy; All rights reserved
+
+  </footer>
+  <script src="js/UI.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
