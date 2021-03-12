@@ -42,8 +42,8 @@ class UI {
       .catch((e) => console.log(e.message));
   }
   showUserDetails(data) {
-    this.display(userContainer, this.isDisplay(data.name));
-    this.display(warning, this.isDisplay(!data.name));
+    this.display(userContainer, this.isDisplay(data.login));
+    this.display(warning, this.isDisplay(!data.login));
 
     userImage.src = data.avatar_url;
     fullName.textContent = data.name;
